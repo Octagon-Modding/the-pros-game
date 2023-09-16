@@ -17,10 +17,10 @@ jobs:
       - name: Show files
         run: ls -a
 
-      #- name: Upload file to archive.org
-        #uses: palewire/internet-archive-upload@v1
-        #with:
-          #access-key: ${{ secrets.IA_ACCESS_KEY }}
-          #secret-key: ${{ secrets.IA_SECRET_KEY }}
-          #identifier: your-item
-          #files: your-files/
+      - name: Upload file to archive.org
+        uses: palewire/internet-archive-upload@v1
+        with:
+          access-key: ${{ secrets.IA_ACCESS_KEY }}
+          secret-key: ${{ secrets.IA_SECRET_KEY }}
+          identifier: ${{ github.sha }}
+          files: prosgame.bundle
