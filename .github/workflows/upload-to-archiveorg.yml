@@ -13,14 +13,11 @@ jobs:
             
       - name: Create bundle
         run: git bundle create prosgame.bundle --all
-            
-      - name: Show files
-        run: ls -a
 
       - name: Upload file to archive.org
         uses: palewire/internet-archive-upload@v1
         with:
           access-key: ${{ secrets.IA_ACCESS_KEY }}
           secret-key: ${{ secrets.IA_SECRET_KEY }}
-          identifier: ${{ github.sha }}
+          identifier: pros_game-${{ github.sha }}
           files: prosgame.bundle
