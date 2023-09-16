@@ -11,6 +11,9 @@ jobs:
         with:
             fetch-depth: 0
             
+      - name: Create bundle
+        run: git bundle create prosgame.bundle --all
+            
       - name: Show files
         run: ls -a
 
