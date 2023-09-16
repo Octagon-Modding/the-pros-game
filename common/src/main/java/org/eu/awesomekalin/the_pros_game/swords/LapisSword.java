@@ -8,33 +8,33 @@ public class LapisSword extends SwordItem {
         super(new Tier() {
             @Override
             public int getUses() {
-                return 1850;
+                return 1700;
             }
 
             @Override
             public float getSpeed() {
-                return 10f;
+                return 5f;
             }
 
             @Override
             public float getAttackDamageBonus() {
-                return -5.5f;
+                return -2.5f;
             }
 
             @Override
             public int getLevel() {
-                return 3;
+                return 2;
             }
 
             @Override
             public int getEnchantmentValue() {
-                return 10;
+                return 6;
             }
 
             @Override
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(Items.LAPIS_LAZULI));
             }
-        }, 10, -1f, new Item.Properties());
+        }, 5, -1f, new Item.Properties());
     }
 }
