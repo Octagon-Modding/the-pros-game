@@ -8,6 +8,7 @@ import org.eu.awesomekalin.the_pros_game.ThePro_sGame;
 import org.eu.awesomekalin.the_pros_game.swords.EmeraldSword;
 import org.eu.awesomekalin.the_pros_game.swords.LapisSword;
 import org.eu.awesomekalin.the_pros_game.swords.ObsidianSword;
+import org.eu.awesomekalin.the_pros_game.swords.RedstoneSword;
 
 public class SwordInit {
     public static DeferredRegister<Item> SWORDS = DeferredRegister.create(ThePro_sGame.MOD_ID, Registries.ITEM);
@@ -15,4 +16,5 @@ public class SwordInit {
     public static final RegistrySupplier<Item> EMERALD_SWORD = SWORDS.register("emerald_sword", EmeraldSword::new);
     public static final RegistrySupplier<Item> OBSIDIAN_SWORD = SWORDS.register("obsidian_sword", ObsidianSword::new);
     public static final RegistrySupplier<Item> LAPIS_SWORD = SWORDS.register("lapis_sword", LapisSword::new);
+    public static final RegistrySupplier<Item> REDSTONE_SWORD = SWORDS.register("redstone_sword", RedstoneSword::new);
 }

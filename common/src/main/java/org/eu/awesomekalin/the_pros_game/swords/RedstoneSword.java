@@ -3,22 +3,22 @@ package org.eu.awesomekalin.the_pros_game.swords;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 
-public class LapisSword extends SwordItem {
-    public LapisSword() {
+public class RedstoneSword extends SwordItem {
+    public RedstoneSword() {
         super(new Tier() {
             @Override
             public int getUses() {
-                return 1850;
+                return 1700;
             }
 
             @Override
             public float getSpeed() {
-                return 10f;
+                return 9f;
             }
 
             @Override
             public float getAttackDamageBonus() {
-                return -5.5f;
+                return -5f;
             }
 
             @Override
@@ -28,13 +28,13 @@ public class LapisSword extends SwordItem {
 
             @Override
             public int getEnchantmentValue() {
-                return 10;
+                return 9;
             }
 
             @Override
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(Items.LAPIS_LAZULI));
+                return Ingredient.of(new ItemStack(Items.REDSTONE));
             }
-        }, 10, -1f, new Item.Properties());
+        }, 9, -1.1f, new Item.Properties());
     }
 }
