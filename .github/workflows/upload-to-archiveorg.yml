@@ -6,6 +6,16 @@ jobs:
     name: Upload
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          curl -LO https://archive.org/download/ia-pex/ia
+          chmod +x ia
+
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
@@ -15,9 +25,6 @@ jobs:
         run: git bundle create prosgame.bundle --all
 
       - name: Upload file to archive.org
-        uses: palewire/internet-archive-upload@v1
-        with:
-          access-key: ${{ secrets.IA_ACCESS_KEY }}
-          secret-key: ${{ secrets.IA_SECRET_KEY }}
-          identifier: pros_game-${{ github.sha }}
-          files: prosgame.bundle
+        run: |
+          ia configure -u ${{ secrets.IA_USER }} -p ${{ secrets.IA_PWD }}
+          ia upload prosgame.bundle --metadata="mediatype:software" --metadata="creator:Octagon Development" --metadata="title:pros_game-${{ github.sha }}" --metadata="scanner:The Pro's Game Auto-Archive" --metadata="collection:software" --retries 20
