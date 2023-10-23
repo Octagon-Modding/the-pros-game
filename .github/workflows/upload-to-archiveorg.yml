@@ -26,4 +26,4 @@ jobs:
       - name: Upload file to archive.org
         run: |
           ia configure -u ${{ secrets.IA_USER }} -p ${{ secrets.IA_PWD }}
-          ia upload prosgame.bundle --metadata="mediatype:software" --metadata="creator:Octagon Development" --metadata="title:pros_game-${{ github.sha }}" --metadata="scanner:The Pro's Game Auto-Archive" --metadata="collection:software" --retries 20
+          ia upload pros_game-${{ github.sha }} prosgame.bundle --metadata="mediatype:software" --metadata="creator:Octagon Development" --metadata="title:pros_game-${{ github.sha }}" --metadata="scanner:The Pro's Game Auto-Archive" --metadata="collection:software" --retries 20
