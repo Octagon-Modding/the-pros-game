@@ -13,8 +13,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          curl -LO https://archive.org/download/ia-pex/ia
-          chmod +x ia
+          pip install internetarchive
 
       - name: Checkout repo
         uses: actions/checkout@v4
