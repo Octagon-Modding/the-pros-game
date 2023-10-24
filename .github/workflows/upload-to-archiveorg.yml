@@ -26,4 +26,4 @@ jobs:
       - name: Upload file to archive.org
         run: |
           ia configure -u ${{ secrets.IA_USER }} -p ${{ secrets.IA_PWD }}
-          ia upload pros_game-${{ github.sha }} prosgame.bundle --metadata="mediatype:software" --metadata="creator:Octagon Development" --metadata="title:pros_game-${{ github.sha }}" --metadata="scanner:The Pro's Game Auto-Archive" --metadata="collection:open_source_software" --retries 20
+          ia upload pros_game-${{ github.sha }} prosgame.bundle --metadata="mediatype:software" --metadata="creator:Octagon Development" --metadata="title:pros_game-${{ github.sha }}" --metadata="scanner:The Pro's Game Auto-Archive" --metadata="collection:open_source_software" --metadata="subject:pro;Minecraft;mod;forge;fabric;architectuary;octagon development" --metadata="originalurl:https://github.com/Octagon-Modding/the-pros-game" --retries 20
