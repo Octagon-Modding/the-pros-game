@@ -2,6 +2,7 @@ package org.eu.awesomekalin.the_pros_game.swords;
 
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import org.eu.awesomekalin.the_pros_game.ProTab;
 
 public class LapisSword extends SwordItem {
     public LapisSword() {
@@ -35,6 +36,6 @@ public class LapisSword extends SwordItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(Items.LAPIS_LAZULI));
             }
-        }, 5, -1f, new Item.Properties());
+        }, 5, -1f, new Item.Properties().arch$tab(ProTab.PRO_TAB));
     }
 }

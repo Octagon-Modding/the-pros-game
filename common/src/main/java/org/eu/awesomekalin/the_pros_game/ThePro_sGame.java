@@ -9,5 +9,6 @@ public class ThePro_sGame {
     public static void init() {
         SwordInit.SWORDS.register();
         PickaxeInit.PICKAXES.register();
+        ProTab.TAB_REGISTER.register();
     }
 }

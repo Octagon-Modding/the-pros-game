@@ -2,6 +2,7 @@ package org.eu.awesomekalin.the_pros_game.swords;
 
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import org.eu.awesomekalin.the_pros_game.ProTab;
 
 public class GlowstoneSword extends SwordItem {
     public GlowstoneSword() {
@@ -35,6 +36,6 @@ public class GlowstoneSword extends SwordItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(Items.GLOWSTONE_DUST));
             }
-        }, 4, -2f, new Item.Properties());
+        }, 4, -2f, new Item.Properties().arch$tab(ProTab.PRO_TAB));
     }
 }

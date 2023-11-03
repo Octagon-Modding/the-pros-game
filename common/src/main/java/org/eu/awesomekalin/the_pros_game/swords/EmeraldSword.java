@@ -2,6 +2,7 @@ package org.eu.awesomekalin.the_pros_game.swords;
 
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import org.eu.awesomekalin.the_pros_game.ProTab;
 
 public class EmeraldSword extends SwordItem {
     public EmeraldSword() {
@@ -35,6 +36,6 @@ public class EmeraldSword extends SwordItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(Items.EMERALD));
             }
-        }, 7, -1.5f, new Item.Properties());
+        }, 7, -1.5f, new Item.Properties().arch$tab(ProTab.PRO_TAB));
     }
 }

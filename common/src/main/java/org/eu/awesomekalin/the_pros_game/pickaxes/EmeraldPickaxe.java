@@ -2,6 +2,7 @@ package org.eu.awesomekalin.the_pros_game.pickaxes;
 
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import org.eu.awesomekalin.the_pros_game.ProTab;
 
 public class EmeraldPickaxe extends PickaxeItem {
     public EmeraldPickaxe() {
@@ -35,6 +36,6 @@ public class EmeraldPickaxe extends PickaxeItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(Items.EMERALD));
             }
-        }, 7, -4.7f, new Item.Properties());
+        }, 7, -4.7f, new Item.Properties().arch$tab(ProTab.PRO_TAB));
     }
 }

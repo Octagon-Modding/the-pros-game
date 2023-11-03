@@ -2,6 +2,7 @@ package org.eu.awesomekalin.the_pros_game.pickaxes;
 
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import org.eu.awesomekalin.the_pros_game.ProTab;
 
 public class GlowstonePickaxe extends PickaxeItem {
     public GlowstonePickaxe() {
@@ -35,6 +36,6 @@ public class GlowstonePickaxe extends PickaxeItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(Items.GLOWSTONE_DUST));
             }
-        }, 4, 6.0f, new Item.Properties());
+        }, 4, 6.0f, new Item.Properties().arch$tab(ProTab.PRO_TAB));
     }
 }
