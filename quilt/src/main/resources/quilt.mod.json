@@ -1,0 +1,42 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "${group}",
+        "id": "the_pros_game",
+        "version": "${version}",
+        "metadata": {
+            "name": "The Pro's Game",
+            "description": "",
+            "contributors": {},
+            "contact": {},
+            "icon": "icon.png"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "init": [
+                "org.eu.awesomekalin.quilt.ThePro_sGameQuilt"
+            ]
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "version": "*"
+            },
+            {
+                "id": "quilt_base",
+                "version": "*"
+            },
+            {
+                "id": "minecraft",
+                "version": ">=1.20.2"
+            },
+            {
+                "id": "architectury",
+                "version": ">=10.0.14"
+            }
+        ]
+    },
+    "minecraft": {
+        "environment": "*"
+    }
+}
