@@ -31,7 +31,7 @@ jobs:
       uses: gradle/gradle-build-action@v2
       
     - name: Build for Fabric
-      run: gradle build :fabric:build
+      run: gradle :fabric:build
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
@@ -56,7 +56,7 @@ jobs:
       uses: gradle/gradle-build-action@v2
       
     - name: Build for Forge
-      run: gradle build :forge:build
+      run: gradle :forge:build
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
@@ -81,7 +81,7 @@ jobs:
       uses: gradle/gradle-build-action@v2
       
     - name: Build for Quilt
-      run: gradle build :quilt:build
+      run: gradle :quilt:build
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
