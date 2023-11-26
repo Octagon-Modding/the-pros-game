@@ -64,3 +64,9 @@ description='''
    versionRange="[1.20.2,1.21)"
    ordering="NONE"
    side="BOTH"
+[[dependencies.the_pros_game]]
+   modId="architectury"
+   mandatory=true
+   versionRange="[10.0.16,11)"
+   ordering="BEFORE"
+   side="BOTH"
