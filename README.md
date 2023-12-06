@@ -39,3 +39,5 @@ You want to contribute to The Pro's Game? Great! Here's how to help.
 4. Work on your idea. If your idea requires textures, but you are bad at textures then please put a placeholder texture and allow us to make the texture.
 5. Open a pull request and wait for us to merge the pull request into the repo!
 
+**Need A Server?**
+[![Kinetic Hosting](https://raw.githubusercontent.com/Octagon-Modding/the-pros-game/master/logo/kinetic.webp)](https://billing.kinetichosting.net/aff.php?aff=658)
