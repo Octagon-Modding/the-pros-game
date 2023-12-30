@@ -9,5 +9,8 @@
     "item.the_pros_game.lapis_pickaxe": "Lapis Pickaxe",
     "item.the_pros_game.obsidian_pickaxe": "Obsidian Pickaxe",
     "item.the_pros_game.redstone_pickaxe": "Redstone Pickaxe",
-    "category.pro_tab": "The Pro's Game"
+    "category.pro_tab": "The Pro's Game",
+    "item.the_pros_game.emerald_axe": "Emerald Axe",
+    "item.the_pros_game.glowstone_axe": "Glowstone Axe",
+    "item.the_pros_game.lapis_axe": "Lapis Axe"
 }
