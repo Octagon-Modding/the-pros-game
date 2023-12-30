@@ -12,27 +12,27 @@ public class LapisAxe extends AxeItem {
         super(new Tier() {
             @Override
             public int getUses() {
-                return 1850;
+                return 1250;
             }
 
             @Override
             public float getSpeed() {
-                return 10.0f;
+                return 6.0f;
             }
 
             @Override
             public float getAttackDamageBonus() {
-                return -3.0f;
+                return -1.5f;
             }
 
             @Override
             public int getLevel() {
-                return 4;
+                return 3;
             }
 
             @Override
             public int getEnchantmentValue() {
-                return 10;
+                return 15;
             }
 
             @Override

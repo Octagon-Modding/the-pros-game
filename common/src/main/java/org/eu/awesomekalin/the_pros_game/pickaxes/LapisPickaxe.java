@@ -19,7 +19,7 @@ public class LapisPickaxe extends PickaxeItem {
 
             @Override
             public float getAttackDamageBonus() {
-                return 1.5f;
+                return -1.5f;
             }
 
             @Override
