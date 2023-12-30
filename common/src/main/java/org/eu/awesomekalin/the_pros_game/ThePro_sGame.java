@@ -1,5 +1,6 @@
 package org.eu.awesomekalin.the_pros_game;
 
+import org.eu.awesomekalin.the_pros_game.init.AxeInit;
 import org.eu.awesomekalin.the_pros_game.init.PickaxeInit;
 import org.eu.awesomekalin.the_pros_game.init.SwordInit;
 
@@ -10,5 +11,6 @@ public class ThePro_sGame {
         SwordInit.SWORDS.register();
         PickaxeInit.PICKAXES.register();
         ProTab.TAB_REGISTER.register();
+        AxeInit.AXES.register();
     }
 }
