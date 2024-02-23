@@ -1,14 +1,15 @@
 ﻿![The Pro's Game logo](https://raw.githubusercontent.com/Octagon-Modding/the-pros-game/master/logo/No%20Edition.png)
 The Pro's Game is the ultimate Minecraft mod for Pro's! Now built with Architectury API!
 
-[![Java CI with Gradle](https://github.com/Octagon-Modding/the-pros-game/actions/workflows/gradle.yml/badge.svg)](https://github.com/Octagon-Modding/the-pros-game/actions/workflows/gradle.yml) ![GitHub repo size](https://img.shields.io/github/repo-size/Octagon-Modding/the-pros-game) [![CurseForge Downloads](https://img.shields.io/curseforge/dt/319180?logo=curseforge&logoColor=black&label=CF%20Downloads&labelColor=cc7000&color=blue)](https://legacy.curseforge.com/minecraft/mc-mods/pro-mod)
+[![Java CI with Gradle](https://github.com/Octagon-Modding/the-pros-game/actions/workflows/gradle.yml/badge.svg)](https://github.com/Octagon-Modding/the-pros-game/actions/workflows/gradle.yml) ![GitHub repo size](https://img.shields.io/github/repo-size/Octagon-Modding/the-pros-game) [![Modrinth Downloads](https://img.shields.io/modrinth/dt/OXg8Snlh?logo=modrinth&label=Modrinth%20Downloads&color=green)](https://modrinth.com/mod/the-pros-game)
+ [![CurseForge Downloads](https://img.shields.io/curseforge/dt/319180?logo=curseforge&logoColor=black&label=Forge%20Downloads&labelColor=cc7000&color=blue)](https://legacy.curseforge.com/minecraft/mc-mods/pro-mod) [![CurseForge Fabric Downloads](https://img.shields.io/curseforge/dt/946107?logo=curseforge&logoColor=black&label=Fabric%20Downloads&labelColor=cc7000&color=blue)](https://legacy.curseforge.com/minecraft/mc-mods/the-pros-game-fabric)
 
 
 
 **Currently Supported Minecraft Versions:**
 
- - 1.20.2 (Forge, Neoforge, Fabric, Quilt (once QFAPI supports 1.20.2))
- - Other Minecraft versions will be developed for as soon as v2.0 for 1.20.2 is finished
+ - 1.20.4 (Forge, Neoforge, Fabric, Quilt (once QFAPI supports 1.20.4))
+ - Other Minecraft versions will be developed for as soon as v2.0 for 1.20.4 is finished
 
 **Current Features:**
 
