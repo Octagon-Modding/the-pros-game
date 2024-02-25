@@ -51,7 +51,7 @@ description='''
    # Does this dependency have to exist - if not, ordering below must be specified
    mandatory=true #mandatory
    # The version range of the dependency
-   versionRange="[49,)" #mandatory
+   versionRange="[49.0.30,50)" #mandatory
    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
    ordering="NONE"
    # Side this dependency is applied on - BOTH, CLIENT or SERVER
@@ -67,6 +67,6 @@ description='''
 [[dependencies.the_pros_game]]
    modId="architectury"
    mandatory=true
-   versionRange="[11.0.9,12)"
+   versionRange="[11.0.12,12)"
    ordering="BEFORE"
    side="BOTH"
