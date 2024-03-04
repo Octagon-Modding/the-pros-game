@@ -42,3 +42,5 @@ You want to contribute to The Pro's Game? Great! Here's how to help.
 
 **Need A Server?**
 [![Kinetic Hosting](https://raw.githubusercontent.com/Octagon-Modding/the-pros-game/master/logo/kinetic.webp)](https://billing.kinetichosting.net/aff.php?aff=658)
+
+Your use of this mod is governed by the [Octagon Development Minecraft Project EULA](https://gist.github.com/AwesomeKalin/4782e5c8974af7241a5e3aa9b57da7b3)
