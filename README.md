@@ -41,6 +41,8 @@ You want to contribute to The Pro's Game? Great! Here's how to help.
 5. Open a pull request and wait for us to merge the pull request into the repo!
 
 **Need A Server?**
-[![Kinetic Hosting](https://raw.githubusercontent.com/Octagon-Modding/the-pros-game/master/logo/kinetic.webp)](https://billing.kinetichosting.net/aff.php?aff=658)
+[![Ocean Hosting](https://raw.githubusercontent.com/Octagon-Modding/the-pros-game/master/logo/OceanHostingLOGO.webp)](https://www.ocean-hosting.top)
+
+Get 50% off a [Server Reservation Slot](https://store.ocean-hosting.top/package/1227281) with code AWESOMEKALIN
 
 Your use of this mod is governed by the [Octagon Development Minecraft Project EULA](https://gist.github.com/AwesomeKalin/4782e5c8974af7241a5e3aa9b57da7b3)
