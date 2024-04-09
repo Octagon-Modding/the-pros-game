@@ -6,10 +6,15 @@ The Pro's Game is the ultimate Minecraft mod for Pro's! Now built with Architect
 
 
 
-**Currently Supported Minecraft Versions:**
+**Supported Minecraft Versions:**
 
- - 1.20.4 (Forge, Neoforge, Fabric, Quilt (once QFAPI supports 1.20.4))
- - Other Minecraft versions will be developed for as soon as v2.0 for 1.20.4 is finished
+|        | ![Fabric Logo](https://fabricmc.net/assets/logo.png)Fabric | ![Neoforged Logo](https://neoforged.net/img/content/branding/banner.png) | ![Forge Logo](https://files.minecraftforge.net/static/images/logo.svg) | <img src="https://quiltmc.org/assets/img/logo.svg" width="128px" alt="Quilt Logo" />Quilt |
+|--------|--------|----------|-------|-------|
+| 1.20.4 | ✅ | ✅ | ✅ | 🚧 |
+| 1.20.2 | ✅ | ❌ | ✅ | 🚧 |
+| 1.15.2 | ❌ | 🚧 | ✅ (Only on CF) | 🚧 |
+| 1.14.4 | ❌ | 🚧 | ✅ (Only on CF) | 🚧 |
+| 1.12.2 | 🚧 | 🚧 | ✅ (Only on CF) | 🚧 |
 
 **Current Features:**
 
@@ -18,16 +23,16 @@ The Pro's Game is the ultimate Minecraft mod for Pro's! Now built with Architect
  - Glowstone Sword and Pickaxe
  - Obsidian Sword and Pickaxe
  - Redstone Sword and Pickaxe
-
-**Currently In Development:**
-
  - Emerald Axe, Shovel, Hoe and Armor
  - Lapis Axe, Shovel, Hoe and Armor
  - Glowstone Axe, Shovel, Hoe and Armor
  - Obsidian Axe, Shovel, Hoe and Armor
  - Redstone Axe, Shovel, Hoe and Armor
- - Pro Chest
  - Pro Food
+
+**Currently In Development:**
+
+ - Pro Chest
  - Pro Dimension and Portal
  - Revamped Textures
  - More features to come soon
