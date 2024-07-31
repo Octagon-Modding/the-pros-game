@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="LGPLv3-only"
+
+[[mods]]
+modId="pro"
+version="@version@"
+displayName="The Pro's Game"
+authors="Octagon Development"
+description="The Pro's Game is the ultimate Minecraft mod for Pro's!"
+
+[[dependencies.pro]]
+modId = "forge"
+mandatory = true
+versionRange = "[36,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.pro]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[@minecraft@]"
+ordering = "NONE"
+side = "BOTH"
