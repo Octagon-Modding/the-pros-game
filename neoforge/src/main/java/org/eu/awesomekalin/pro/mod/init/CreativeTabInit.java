@@ -15,10 +15,19 @@ public class CreativeTabInit {
         TheProsGame.LOGGER.info("Initialising Creative Mode Tabs");
 
         TAB_CONTENTS.add(SwordInit.EMERALD_SWORD);
+        TAB_CONTENTS.add(PickaxeInit.EMERALD_PICKAXE);
+
         TAB_CONTENTS.add(SwordInit.GLOWSTONE_SWORD);
+        TAB_CONTENTS.add(PickaxeInit.GLOWSTONE_PICKAXE);
+
         TAB_CONTENTS.add(SwordInit.LAPIS_SWORD);
+        TAB_CONTENTS.add(PickaxeInit.LAPIS_PICKAXE);
+
         TAB_CONTENTS.add(SwordInit.OBSIDIAN_SWORD);
+        TAB_CONTENTS.add(PickaxeInit.OBSIDIAN_PICKAXE);
+
         TAB_CONTENTS.add(SwordInit.REDSTONE_SWORD);
+        TAB_CONTENTS.add(PickaxeInit.REDSTONE_PICKAXE);
 
         CREATIVE_REGISTER.registerTab("pro_tab", "itemGroup.progame", SwordInit.EMERALD_SWORD, TAB_CONTENTS);
         CREATIVE_REGISTER.register();
