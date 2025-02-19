@@ -1,67 +1,66 @@
-import org.apache.tools.ant.filters.ReplaceTokens
-import org.eu.awesomekalin.pro.mod.BuildTools
-
 plugins {
-    id "fabric-loom" version "+"
+    id 'fabric-loom' version '+'
 }
 
-final BuildTools buildTools = new BuildTools(minecraftVersion, "fabric", project)
+base {
+    archivesName = "prosgame-${mod_version}-${minecraft_version}-fabric"
+}
 
-loom {
-    runConfigs.configureEach { ideConfigGenerated = true }
+configurations {
+    runtimeClasspath.extendsFrom localRuntime
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:${minecraftVersion}"
-    mappings "net.fabricmc:yarn:${buildTools.getYarnVersion()}:v2"
-    modImplementation "net.fabricmc:fabric-loader:${buildTools.getFabricVersion()}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${buildTools.getFabricApiVersion()}"
-    modApi "com.terraformersmc:modmenu:${buildTools.getModMenuVersion()}"
-    shadowImplementation "org.mtr:Minecraft-Mappings-fabric-${minecraftVersion}:0.0.1-dev"
-    testImplementation "org.junit.jupiter:junit-jupiter-api:+"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:+"
+    // To change the versions see the gradle.properties file
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+    // Fabric API. This is technically optional, but you probably want it anyway.
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    modImplementation files("../libs/pufferfishapi-${pufferfishapiver}-${minecraft_version}-fabric.jar")
 }
 
-repositories {
-    maven { url = "https://maven.terraformersmc.com/" }
-    maven { url "https://maven.nucleoid.xyz/" }
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            minecraft_version      : minecraft_version,
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_license            : mod_license,
+            mod_version            : mod_version,
+            mod_authors            : mod_authors,
+            mod_description        : mod_description,
+            loader_version         : loader_version
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
 }
 
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(buildTools.javaLanguageVersion))
-    }
-    withSourcesJar()
-    withJavadocJar()
-}
+sourceSets.main.resources.srcDir generateModMetadata
 
-tasks.register("setupFiles") {
+tasks.register('setupFiles') {
+    delete fileTree("./src/main/java/org/eu/awesomekalin/pro/mod")
+    delete fileTree("./src/main/resources")
+
     copy {
         outputs.upToDateWhen { false }
-        from "src/main/fabric.mod.template.json"
-        into "src/main/resources"
-        filter(ReplaceTokens, tokens: ["minecraft": minecraftVersion, "version": version])
-        rename "(.+).template.json", "\$1.json"
+        from "../neoforge/src/main/java/org/eu/awesomekalin/pro/mod"
+        into "./src/main/java/org/eu/awesomekalin/pro/mod"
+    }
+
+    copy {
+        outputs.upToDateWhen { false }
+        from "../neoforge/src/main/resources"
+        into "./src/main/resources"
     }
 }
 
-build {
-    doLast {
-        buildTools.copyBuildFile(excludeAssets == "true")
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
     }
-}
-
-shadowJar {
-    exclude excludeAssets == "true" ? "assets" : "abc123"
-}
-
-remapJar {
-    dependsOn(shadowJar)
-    mustRunAfter(shadowJar)
-    inputFile = file(shadowJar.archivePath)
-}
-
-test {
-    useJUnitPlatform()
-    testLogging { showStandardStreams = true }
 }
