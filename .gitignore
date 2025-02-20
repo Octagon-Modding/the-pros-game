@@ -24,3 +24,9 @@ runs
 run-data
 
 repo
+
+/fabric/src/main/java/org/eu/awesomekalin/pro/mod/
+/fabric/src/main/resources/assets/progame/
+
+/forge/src/main/java/org/eu/awesomekalin/pro/mod/
+/forge/src/main/resources/assets/progame/
