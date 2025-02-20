@@ -1,4 +1,4 @@
-name: Build 1.21.4
+name: Build 1.21.1
 
 on: [push, pull_request]
 
@@ -26,11 +26,11 @@ jobs:
 
       - name: Setup Files
         run: |
-          ./gradlew fabric:setupFiles -Pminecraft_version=1.21.1 -Pminecraft_version_range=[1.21.1] -Pparchment_minecraft_version=1.21.1 -Pparchment_mappings_version=2024.11.17 -Pneo_version=21.1.121 -Pneo_version_range=[21.1.121,) -Pyarn_mappings=1.21.1+build.3 -Pfabric_version=0.115.0+1.21.1 -Pforge_version=52.0.53
-          ./gradlew forge:setupFiles -Pminecraft_version=1.21.1 -Pminecraft_version_range=[1.21.1] -Pparchment_minecraft_version=1.21.1 -Pparchment_mappings_version=2024.11.17 -Pneo_version=21.1.121 -Pneo_version_range=[21.1.121,) -Pyarn_mappings=1.21.1+build.3 -Pfabric_version=0.115.0+1.21.1 -Pforge_version=52.0.53
+          ./gradlew fabric:setupFiles -Pminecraft_version="1.21.1" -Pminecraft_version_range="[1.21.1]" -Pparchment_minecraft_version="1.21.1" -Pparchment_mappings_version="2024.11.17" -Pneo_version="21.1.121" -Pneo_version_range="[21.1.121,)" -Pyarn_mappings="1.21.1+build.3" -Pfabric_version="0.115.0+1.21.1" -Pforge_version="52.0.53"
+          ./gradlew forge:setupFiles -Pminecraft_version="1.21.1" -Pminecraft_version_range="[1.21.1]" -Pparchment_minecraft_version="1.21.1" -Pparchment_mappings_version="2024.11.17" -Pneo_version="21.1.121" -Pneo_version_range="[21.1.121,)" -Pyarn_mappings="1.21.1+build.3" -Pfabric_version="0.115.0+1.21.1" -Pforge_version="52.0.53"
 
       - name: Build with Gradle
-        run: ./gradlew build -Pminecraft_version=1.21.1 -Pminecraft_version_range=[1.21.1] -Pparchment_minecraft_version=1.21.1 -Pparchment_mappings_version=2024.11.17 -Pneo_version=21.1.121 -Pneo_version_range=[21.1.121,) -Pyarn_mappings=1.21.1+build.3 -Pfabric_version=0.115.0+1.21.1 -Pforge_version=52.0.53
+        run: ./gradlew build -Pminecraft_version="1.21.1" -Pminecraft_version_range="[1.21.1]" -Pparchment_minecraft_version="1.21.1" -Pparchment_mappings_version="2024.11.17" -Pneo_version="21.1.121" -Pneo_version_range="[21.1.121,)" -Pyarn_mappings="1.21.1+build.3" -Pfabric_version="0.115.0+1.21.1" -Pforge_version="52.0.53"
 
       - name: Upload NeoForge artifact
         uses: actions/upload-artifact@v4
