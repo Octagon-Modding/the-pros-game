@@ -1,0 +1,51 @@
+name: Build 1.20.6
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Setup JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Grant permission to execute gradlew
+        run: sudo chmod +x ./gradlew
+
+      - name: Setup Files
+        run: |
+          ./gradlew fabric:setupFiles -Pminecraft_version="1.20.6" -Pminecraft_version_range="[1.20.6]" -Pparchment_minecraft_version="1.20.6" -Pparchment_mappings_version="2024.06.16" -Pneo_version="20.6.125" -Pneo_version_range="[20.6.125,)" -Pyarn_mappings="1.20.6+build.3" -Pfabric_version="0.100.8+1.20.6" -Pforge_version="50.1.0"
+          ./gradlew forge:setupFiles -Pminecraft_version="1.20.6" -Pminecraft_version_range="[1.21.1]" -Pparchment_minecraft_version="1.20.6" -Pparchment_mappings_version="2024.06.16" -Pneo_version="20.6.125" -Pneo_version_range="[20.6.125,)" -Pyarn_mappings="1.20.6+build.3" -Pfabric_version="0.100.8+1.20.6" -Pforge_version="50.1.0"
+
+      - name: Build with Gradle
+        run: ./gradlew build -Pminecraft_version="1.20.6" -Pminecraft_version_range="[1.20.6]" -Pparchment_minecraft_version="1.20.6" -Pparchment_mappings_version="2024.06.16" -Pneo_version="20.6.125" -Pneo_version_range="[20.6.125,)" -Pyarn_mappings="1.20.6+build.3" -Pfabric_version="0.100.8+1.20.6" -Pforge_version="50.1.0"
+
+      - name: Upload NeoForge artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: ./neoforge/build/libs/*
+          name: The Pro's Game for NeoForge 1.20.6
+
+      - name: Upload Fabric artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: ./fabric/build/libs/*
+          name: The Pro's Game for Fabric 1.20.6
+
+      - name: Upload Forge artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: ./fabric/build/libs/*
+          name: The Pro's Game for Forge 1.20.6
