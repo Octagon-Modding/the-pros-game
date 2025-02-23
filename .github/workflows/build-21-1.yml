@@ -47,5 +47,5 @@ jobs:
       - name: Upload Forge artifact
         uses: actions/upload-artifact@v4
         with:
-          path: ./fabric/build/libs/*
+          path: ./forge/build/libs/*
           name: The Pro's Game for Forge 1.21.1
