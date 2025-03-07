@@ -2,10 +2,7 @@ package org.eu.awesomekalin.pro.mod;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.eu.awesomekalin.pro.mod.init.AxeInit;
-import org.eu.awesomekalin.pro.mod.init.CreativeTabInit;
-import org.eu.awesomekalin.pro.mod.init.PickaxeInit;
-import org.eu.awesomekalin.pro.mod.init.SwordInit;
+import org.eu.awesomekalin.pro.mod.init.*;
 
 public class TheProsGame {
     public static final String MODID = "progame";
@@ -17,6 +14,7 @@ public class TheProsGame {
         SwordInit.init();
         PickaxeInit.init();
         AxeInit.init();
+        FoodInit.init();
         CreativeTabInit.init();
     }
 }

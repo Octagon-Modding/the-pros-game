@@ -34,6 +34,8 @@ public class CreativeTabInit {
         TAB_CONTENTS.add(SwordInit.REDSTONE_SWORD);
         TAB_CONTENTS.add(PickaxeInit.REDSTONE_PICKAXE);
 
+        TAB_CONTENTS.add(FoodInit.PROS_FOOD);
+
         CREATIVE_REGISTER.registerTab("pro_tab", "itemGroup.progame", SwordInit.EMERALD_SWORD, TAB_CONTENTS);
         CREATIVE_REGISTER.register();
     }

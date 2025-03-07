@@ -18,11 +18,11 @@ public class PickaxeInit {
     public static void init() {
         TheProsGame.LOGGER.info("Initialising Pickaxes");
 
-        EMERALD_PICKAXE = PICKAXE_REGISTER.registerPickaxe(new ToolHolder(ToolMaterials.EMERALD, 7f, 1.5f, "emerald_pickaxe"));
-        GLOWSTONE_PICKAXE = PICKAXE_REGISTER.registerPickaxe(new ToolHolder(ToolMaterials.GLOWSTONE, 4f, 2f, "glowstone_pickaxe"));
-        LAPIS_PICKAXE = PICKAXE_REGISTER.registerPickaxe(new ToolHolder(ToolMaterials.LAPIS, 5f, 1f, "lapis_pickaxe"));
-        OBSIDIAN_PICKAXE = PICKAXE_REGISTER.registerPickaxe(new ToolHolder(ToolMaterials.OBSIDIAN, 12f, 0.5f,"obsidian_pickaxe"));
-        REDSTONE_PICKAXE = PICKAXE_REGISTER.registerPickaxe(new ToolHolder(ToolMaterials.REDSTONE, 9f, 1.1f, "redstone_pickaxe"));
+        EMERALD_PICKAXE = PICKAXE_REGISTER.registerPickaxe(new ToolHolder(ToolMaterials.EMERALD, 3.5f, 0.75f, "emerald_pickaxe"));
+        GLOWSTONE_PICKAXE = PICKAXE_REGISTER.registerPickaxe(new ToolHolder(ToolMaterials.GLOWSTONE, 2f, 1f, "glowstone_pickaxe"));
+        LAPIS_PICKAXE = PICKAXE_REGISTER.registerPickaxe(new ToolHolder(ToolMaterials.LAPIS, 2.5f, 0.5f, "lapis_pickaxe"));
+        OBSIDIAN_PICKAXE = PICKAXE_REGISTER.registerPickaxe(new ToolHolder(ToolMaterials.OBSIDIAN, 6f, 0.25f,"obsidian_pickaxe"));
+        REDSTONE_PICKAXE = PICKAXE_REGISTER.registerPickaxe(new ToolHolder(ToolMaterials.REDSTONE, 4.5f, 0.55f, "redstone_pickaxe"));
 
         PICKAXE_REGISTER.register();
     }
