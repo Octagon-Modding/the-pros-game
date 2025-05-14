@@ -1,13 +1,9 @@
 package org.eu.awesomekalin.pro.mod.init;
 
-import net.minecraft.sounds.SoundEvents;
 import org.eu.awesomekalin.pro.mod.TheProsGame;
 import org.eu.awesomekalin.pro.mod.utils.ArmorMaterials;
-import org.eu.awesomekalin.pufferfishapi.holders.ArmorHolder;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
-import org.eu.awesomekalin.pufferfishapi.holders.SoundEventsHolder;
 import org.eu.awesomekalin.pufferfishapi.registry.ItemRegistry;
-import org.eu.awesomekalin.pufferfishapi.util.Identifier;
 
 public class ArmourInit {
     public static final ItemRegistry ARMOR_REGISTRY = new ItemRegistry(TheProsGame.MODID);
