@@ -6,6 +6,12 @@ base {
     archivesName = "prosgame-${mod_version}-${minecraft_version}-forge"
 }
 
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
 minecraft {
     // The mappings can be changed at any time and must be in the following format.
     // Channel:   Version:
@@ -101,9 +107,15 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation files("../libs/pufferfishapi-${pufferfishapiver}-${minecraft_version}-forge.jar")
+    implementation ("com.github.Octagon-Modding:Pufferfish-API:forge-${minecraft_version}-SNAPSHOT") {
+        changing=true
+    }
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

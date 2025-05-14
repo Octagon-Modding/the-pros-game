@@ -3,7 +3,13 @@ plugins {
 }
 
 base {
-    archivesName = "prosgame-${mod_version}-${minecraft_version}-neoforge"
+    archivesName = "prosgame-${mod_version}-neoforge"
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 neoForge {
@@ -42,7 +48,7 @@ neoForge {
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
-        data {
+        /*data {
             if (minecraft_version == "1.21.4") {
                 clientData()
             } else {
@@ -54,7 +60,7 @@ neoForge {
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
-        }
+        }*/
 
         // applies to all the run configs above
         configureEach {
@@ -88,6 +94,10 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
@@ -111,7 +121,9 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-    implementation files("../libs/pufferfishapi-${pufferfishapiver}-${minecraft_version}-neoforge.jar")
+    implementation ("com.github.Octagon-Modding:Pufferfish-API:neoforge-${minecraft_version}-SNAPSHOT") {
+        changing=true
+    }
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

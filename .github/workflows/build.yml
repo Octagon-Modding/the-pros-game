@@ -1,4 +1,4 @@
-name: Build 1.21.4
+name: Build (All versions)
 
 on: [push, pull_request]
 
@@ -36,16 +36,16 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: ./neoforge/build/libs/*
-          name: The Pro's Game for NeoForge 1.21.4
+          name: The Pro's Game for NeoForge
 
       - name: Upload Fabric artifact
         uses: actions/upload-artifact@v4
         with:
           path: ./fabric/build/libs/*
-          name: The Pro's Game for Fabric 1.21.4
+          name: The Pro's Game for Fabric
 
       - name: Upload Forge artifact
         uses: actions/upload-artifact@v4
         with:
           path: ./forge/build/libs/*
-          name: The Pro's Game for Forge 1.21.4
+          name: The Pro's Game for Forge

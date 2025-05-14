@@ -6,8 +6,18 @@ base {
     archivesName = "prosgame-${mod_version}-${minecraft_version}-fabric"
 }
 
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
 configurations {
     runtimeClasspath.extendsFrom localRuntime
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
 
 dependencies {
@@ -19,7 +29,9 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    modImplementation files("../libs/pufferfishapi-${pufferfishapiver}-${minecraft_version}-fabric.jar")
+    modImplementation ("com.github.Octagon-Modding:Pufferfish-API:fabric-${minecraft_version}-SNAPSHOT") {
+        changing=true
+    }
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

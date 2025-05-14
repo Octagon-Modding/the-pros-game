@@ -20,6 +20,11 @@ public class CreativeTabInit {
         TAB_CONTENTS.add(ShovelInit.EMERALD_SHOVEL);
         TAB_CONTENTS.add(HoeInit.EMERALD_HOE);
 
+        TAB_CONTENTS.add(ArmourInit.EMERALD_HELMET);
+        TAB_CONTENTS.add(ArmourInit.EMERALD_CHESTPLATE);
+        TAB_CONTENTS.add(ArmourInit.EMERALD_LEGGINGS);
+        TAB_CONTENTS.add(ArmourInit.EMERALD_BOOTS);
+
         TAB_CONTENTS.add(AxeInit.GLOWSTONE_AXE);
         TAB_CONTENTS.add(SwordInit.GLOWSTONE_SWORD);
         TAB_CONTENTS.add(PickaxeInit.GLOWSTONE_PICKAXE);

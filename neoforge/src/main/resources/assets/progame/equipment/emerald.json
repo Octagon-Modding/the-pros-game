@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "progame:emerald"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "progame:emerald"
+            }
+        ]
+    }
+}

@@ -16,7 +16,10 @@ public class TheProsGame {
         AxeInit.init();
         ShovelInit.init();
         HoeInit.init();
+        ArmourInit.init();
+
         FoodInit.init();
+
         CreativeTabInit.init();
     }
 }
