@@ -43,4 +43,7 @@ idea {
 
 forgix {
     autoRun = true
+    neoforge()
+    fabric()
+    forge()
 }
