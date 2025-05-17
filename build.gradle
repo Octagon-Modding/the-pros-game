@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'idea'
-    id "io.github.pacifistmc.forgix" version "+"
+    id "io.github.pacifistmc.forgix" version "1.2.9"
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -42,8 +42,22 @@ idea {
 }
 
 forgix {
-    autoRun = true
-    neoforge()
-    fabric()
-    forge()
+    group = "org.eu.awesomekalin.pro"
+    mergedJarName = "TheProsGame-${project.mod_version}.jar"
+    outputDir = "build/forgix"
+
+    neoforge {
+        projectName = "neoforge"
+        jarLocation = "build/libs/prosgame-${project.mod_version}-neoforge.jar"
+    }
+
+    fabric {
+        projectName = "fabric"
+        jarLocation = "build/libs/prosgame-${project.mod_version}-${project.minecraft_version}-fabric.jar"
+    }
+
+    forge {
+        projectName = "forge"
+        jarLocation = "build/libs/prosgame-${project.mod_version}-${project.minecraft_version}-forge.jar"
+    }
 }
