@@ -31,6 +31,11 @@ public class CreativeTabInit {
         TAB_CONTENTS.add(ShovelInit.GLOWSTONE_SHOVEL);
         TAB_CONTENTS.add(HoeInit.GLOWSTONE_HOE);
 
+        TAB_CONTENTS.add(ArmourInit.GLOWSTONE_HELMET);
+        TAB_CONTENTS.add(ArmourInit.GLOWSTONE_CHESTPLATE);
+        TAB_CONTENTS.add(ArmourInit.GLOWSTONE_LEGGINGS);
+        TAB_CONTENTS.add(ArmourInit.GLOWSTONE_BOOTS);
+
         TAB_CONTENTS.add(AxeInit.LAPIS_AXE);
         TAB_CONTENTS.add(SwordInit.LAPIS_SWORD);
         TAB_CONTENTS.add(PickaxeInit.LAPIS_PICKAXE);

@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "progame:glowstone"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "progame:glowstone"
+            }
+        ]
+    }
+}
