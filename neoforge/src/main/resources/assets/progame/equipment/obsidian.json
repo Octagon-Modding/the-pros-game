@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "progame:obsidian"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "progame:obsidian"
+            }
+        ]
+    }
+}

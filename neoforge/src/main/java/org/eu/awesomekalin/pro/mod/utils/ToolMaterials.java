@@ -3,6 +3,8 @@ package org.eu.awesomekalin.pro.mod.utils;
 import org.eu.awesomekalin.pufferfishapi.util.Identifier;
 import org.eu.awesomekalin.pufferfishapi.util.ToolMaterial;
 
+import static org.eu.awesomekalin.pro.mod.TheProsGame.TAG_PREFIX;
+
 public class ToolMaterials {
     public static final ToolMaterial EMERALD = new ToolMaterial(
             new Identifier("minecraft", "incorrect_for_diamond_tool"),
@@ -10,7 +12,7 @@ public class ToolMaterials {
             7f,
             -4.8f,
             3,
-            new Identifier("c", "gems/emerald")
+            new Identifier(TAG_PREFIX, "gems/emerald")
     );
 
     public static final ToolMaterial GLOWSTONE = new ToolMaterial(
@@ -18,8 +20,8 @@ public class ToolMaterials {
             1000,
             4f,
             4.2f,
-            13,
-            new Identifier("c", "dusts/glowstone")
+            6,
+            new Identifier(TAG_PREFIX, "dusts/glowstone")
     );
 
     public static final ToolMaterial LAPIS = new ToolMaterial(
@@ -27,8 +29,8 @@ public class ToolMaterials {
             1700,
             5f,
             2.5f,
-            6,
-            new Identifier("c", "gems/lapis")
+            13,
+            new Identifier(TAG_PREFIX, "gems/lapis")
     );
 
     public static final ToolMaterial OBSIDIAN = new ToolMaterial(
@@ -37,7 +39,7 @@ public class ToolMaterials {
             12f,
             6f,
             7,
-            new Identifier("c", "obsidians/normal")
+            new Identifier(TAG_PREFIX, "obsidians/normal")
     );
 
     public static ToolMaterial REDSTONE = new ToolMaterial(
@@ -46,6 +48,6 @@ public class ToolMaterials {
             9f,
             5f,
             9,
-            new Identifier("c", "dusts/redstone")
+            new Identifier(TAG_PREFIX, "dusts/redstone")
     );
 }

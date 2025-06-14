@@ -42,17 +42,32 @@ public class CreativeTabInit {
         TAB_CONTENTS.add(ShovelInit.LAPIS_SHOVEL);
         TAB_CONTENTS.add(HoeInit.LAPIS_HOE);
 
+        TAB_CONTENTS.add(ArmourInit.LAPIS_HELMET);
+        TAB_CONTENTS.add(ArmourInit.LAPIS_CHESTPLATE);
+        TAB_CONTENTS.add(ArmourInit.LAPIS_LEGGINGS);
+        TAB_CONTENTS.add(ArmourInit.LAPIS_BOOTS);
+
         TAB_CONTENTS.add(AxeInit.OBSIDIAN_AXE);
         TAB_CONTENTS.add(SwordInit.OBSIDIAN_SWORD);
         TAB_CONTENTS.add(PickaxeInit.OBSIDIAN_PICKAXE);
         TAB_CONTENTS.add(ShovelInit.OBSIDIAN_SHOVEL);
         TAB_CONTENTS.add(HoeInit.OBSIDIAN_HOE);
 
+        TAB_CONTENTS.add(ArmourInit.OBSIDIAN_HELMET);
+        TAB_CONTENTS.add(ArmourInit.OBSIDIAN_CHESTPLATE);
+        TAB_CONTENTS.add(ArmourInit.OBSIDIAN_LEGGINGS);
+        TAB_CONTENTS.add(ArmourInit.OBSIDIAN_BOOTS);
+
         TAB_CONTENTS.add(AxeInit.REDSTONE_AXE);
         TAB_CONTENTS.add(SwordInit.REDSTONE_SWORD);
         TAB_CONTENTS.add(PickaxeInit.REDSTONE_PICKAXE);
         TAB_CONTENTS.add(ShovelInit.REDSTONE_SHOVEL);
         TAB_CONTENTS.add(HoeInit.REDSTONE_HOE);
+
+        TAB_CONTENTS.add(ArmourInit.REDSTONE_HELMET);
+        TAB_CONTENTS.add(ArmourInit.REDSTONE_CHESTPLATE);
+        TAB_CONTENTS.add(ArmourInit.REDSTONE_LEGGINGS);
+        TAB_CONTENTS.add(ArmourInit.REDSTONE_BOOTS);
 
         TAB_CONTENTS.add(FoodInit.PROS_FOOD);
 
